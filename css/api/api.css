@@ -1,0 +1,234 @@
+.navbar { background-color: var(--theme-black) }
+.navbar-menu-trigger {display: block }
+
+
+.search-box { 
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding-inline: 2em;
+    z-index: 2;  
+}
+
+.search-box.active { display: flex }
+
+.input-search__container { flex: 1 }
+
+.input { 
+     width: 100%;
+     left: 0;
+     padding: 0.5em;
+     position: relative;
+ }
+
+.input:active,
+.input:focus { 
+    outline: none;
+    border: none;
+    background-color: var(--theme-dark-red);
+    color: var(--theme-white);
+    font-weight: bold;
+}
+
+.search-icon { width: 35px }
+
+.search-icon,
+.hamburger-menu-trigger { cursor: pointer }
+
+/* Body Parts List */
+
+
+.body-part-list-slider { width: 80%; overflow: hidden; }
+
+.body-part-list { 
+    height: calc(100vh - 100px);
+    margin-block-start: 100px;
+}
+
+.slider {
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+}
+
+.slider-wrapper { transition: 500ms }
+
+.body-part-list .container { padding-inline: 0 }
+
+.body-part-list-slider__wrapper { 
+    height: 80%;
+    width: 100%;
+    height: 60%;
+    gap: 5rem;
+    padding-block: 1em;
+}
+
+.body-part-card { 
+    flex: 1 0 20%;
+    aspect-ratio: 1;
+    border: 1px solid lightgrey; 
+    margin-block-start: 100px;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: 200ms;
+    overflow: hidden;
+}
+
+
+.body-part-card:hover {
+  border: 1px solid var(--theme-medium-red);
+}
+
+
+.body-part-card:hover .shapes-wrapper_2 { top: -10%; right: -10%; opacity: 0.8 } 
+.body-part-card:hover .shapes-wrapper_2::before { transform: scale(1.2)  } 
+
+.shapes-content { border: none }
+
+.training-section__slider__control,
+.exercise-youtube-videos__slider__control { 
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1;
+ }
+
+ [class*="arrow"] {   background-color: var(--theme-medium-red) }
+
+ /* Show Results */ 
+
+.show-results { text-align: center; margin-block: 2rem; min-height: 100vh; }
+
+.show-results-slider { overflow: clip }
+
+.show-results .container { padding-inline: 0; gap: 6rem; justify-content: space-around; }
+
+.show-results-container__slider__control { display: none; position: relative }
+.show-results-container__slider__control.active { display: flex }
+
+.card-wrapper { 
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    flex: 1 0 100%;
+}
+
+.card-wrapper-container { transition: 200ms; }
+
+.card-result {
+    border: 1px solid lightgrey;
+    overflow: hidden;
+    padding-block: 1em;
+    transition: 200ms;
+}
+
+.card-result:hover { 
+    border: 1px solid var(--theme-medium-red);
+    border-radius: 20px;
+}
+
+.show-results-container__card__caption { transition: 100ms }
+
+.data-body-part { padding: 0.5em 1em; border-radius: 8px; transition: 300ms; }
+
+.data-body-part:hover { border-radius: 0; transform: scale(1.1); }
+
+
+.card-result:hover .caption{ color: var(--theme-dark-red) }
+
+.show-result__card,
+.card-wrapper a, 
+.exercises-youtube-videos-slider__wrapper a {
+    flex: 1 0 24%;
+    padding-block: 0.5em;
+}
+
+.exercises-youtube-videos-slider__wrapper a { max-width: calc(400px - 16px) }
+
+.exercises-similar__icon { 
+    border-radius: 10px;
+    padding: 0.5em;
+    color: var(--theme-white);
+    cursor: pointer;
+}
+
+/* Details  */
+
+.fill-text-cta { font-size: var(--fs-300) }
+
+.fill-text-cta::before { width: 100% } 
+
+.exercise { margin-block: 80px; height: calc(100% - 80px); padding-block: 2em; }
+
+.exercise__wrapper { height: 100% } 
+
+.exercise__wrapper > div { flex: 1 }
+
+.exercise__picture > img,
+.exercise-details__container { height: 80% }
+
+.exercise__picture > img { width: 80%; object-fit: cover; }
+
+.exercise-details__container { line-height: 1.2 }
+
+.card-icon { padding-block: 1em; }
+
+
+/* Youtube Section */
+
+.exercises-youtube-videos-slider__wrapper,
+.exercise-equipment,
+.exercise-similar { transition: 300ms; }
+
+.exercises-youtube-videos-slider__wrapper  { width: 100% } 
+
+.channel-description { width: 100% }
+
+.title-youtube {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+}
+
+
+/* Similar Exercises */
+
+.exercise-similar, 
+.exercise-equipment { padding-block: 1em }
+
+.exercises-related,
+.exercises-equipment,
+.exercises-similar,
+.exercises-youtube-videos  { height: 100vh }
+
+.exercise-similar-slider, 
+.exercise-equipment-slider { overflow: hidden; width: 100% }
+
+.exercise-similar-slider__wrapper,
+.exercise-equipment-slider__wrapper { width: 100% }
+
+.exercises-youtube-videos-slider { overflow: hidden }
+
+.exercise-equipment-slider__wrapper  a,
+.exercise-similar-slider__wrapper  a,
+.exercises-related-youtube-videos-slider__wrapper iframe  { flex: 1 0 24%  }
+
+.exercise-equipment__card,
+.card-wrapper-container__card  { height: 100%; }
+
+
+.exercise-equipment__card__caption p,
+.exercise-similar__card__caption p,
+.card-wrapper-container__card__caption { text-align: center }
+
+

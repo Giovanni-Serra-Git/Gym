@@ -1,0 +1,456 @@
+/*          1700 px          */
+
+@media (max-width: 106.25em) {  
+    .classes-schedule__card__wrapper { height: 80% };
+    .classes-schedule__card__wrapper > div {  
+    justify-content: space-around;
+    align-items: center; 
+    }
+
+    .classes-schedule__wrapper { justify-content: center }
+
+    .section-programs .container-image-background { 
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+} 
+
+/*          1600 px          */
+
+@media (max-width: 100em) { 
+    .classes-schedule__card__wrapper { height: 70% }
+    .packages__card__button button, 
+    .classes-schedule__card__wrapper button { margin-block: 0; }
+
+}
+ 
+/*          1550 px          */
+
+@media (max-width: 96.875em)  {
+
+    /* Packages Cards */
+
+    .section-programs {
+        display: flex;
+        align-items: center;
+        flex-direction: space-between;
+    }
+
+    .section-programs__card__element { display: flex }
+
+    .section-programs__card,
+    .section-programs__card__wrapper {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    .section-programs__wrapper { align-items: center }
+
+    .section-programs__wrapper .container { 
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+
+    .section-programs__slider__wrapper {
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+     
+    
+    
+    .section-programs__slider {  
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        gap: 1rem;
+    }
+
+    
+    .section-programs__slider__wrapper { width: 100%; display: flex; gap: 1rem; }
+
+    .section-programs__card { box-shadow: none; border: 1px solid var(--theme-gray); }
+
+    .section-programs__container__middle__elements { display: none }
+
+
+
+    /* Cards in the middle */
+
+    /* Classes Schedule */
+
+    .classes-schedule__card__wrapper  {  height: 70% };
+
+
+}
+
+/*          1500 px          */
+
+@media (max-width: 93.75em) {
+
+    .hero-banner-bullets { top: 90% }
+
+    .packages-section { margin-block-start: 6rem  }
+
+}
+
+/*        1450 px         */
+
+@media (max-width: 90.625em) {
+
+    .main-links__large__screen { display: none }
+    .navbar__inner button { display: none }
+    .navbar-menu-trigger { display: block }
+
+}
+
+/*            1320px        */
+
+@media (max-width: 82.50em) { 
+
+
+    .full-height { height: 100%; }
+
+    .packages__caption p {  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .packages .container { flex: 1  }
+
+}
+
+/*           1400px         */
+
+@media (max-width: 87.50em) {
+
+    .hero-banner__container { background-size: contain  }   
+
+    .packages { gap: 1rem }
+
+    .classes-schedule__wrapper-cards-items { width: 90%; align-self: center; }
+
+    .section-schedule { margin-block: 5rem }
+
+    .classes-schedule__wrapper-cards-items,
+    .footer { flex-wrap: wrap }
+    .classes-schedule__card {  flex: 1 0 40%;}
+    .footer__card { flex: 1 0 48%; justify-content: space-between } 
+    .footer__card > div { margin-block: 0; }
+    .footer__card ul { height: 100%; justify-content: space-between; }
+    .footer__socials__list.fa { font-size: 1rem; }
+    .shapes-wrapper_1 { transform: rotate(32deg); } 
+}
+
+/*        1300px         */
+
+@media (max-width: 81.25em) {
+
+    .packages-section { margin-block: 5rem  }
+
+    .packages__card__wrapper { width: 50%; margin-inline: auto; gap: 2rem; }
+
+    .packages__card { flex: 1 0 100% }
+
+    .packages__card__description { width: 80%; margin-inline-start: auto }
+
+    .training-section__slider { flex: 1 }
+
+
+    .training-section__slider__card { 
+        height: 100%;
+        cursor: pointer;
+    }
+
+
+    .slider-card__image img  { width: 100% }
+
+
+    .slider-card__image__square::before { left: 0; }
+
+    .training-section__wrapper .container {
+        flex-direction: column; 
+        justify-content: center;
+    }
+
+    .training-section__wrapper { padding-block: 1em }
+
+    .training-section__caption { width: 100%; text-align: center }
+
+    .training-section__slider__control { display: none } 
+
+    .rotate {
+        height: 100%;
+        left: 100%;
+        top: 0;
+        transform: rotate(0);
+        transition: 500ms;
+    }
+
+    .rotate::before {
+        content: "";
+        border-width: 20px;
+        border-style: solid;
+        border-color: transparent var(--theme-white) transparent transparent;
+        left: -40px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+
+    .slider-card__image__description { 
+        left: 100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        transition: 700ms;
+    }
+
+    .slider-card__image:hover .rotate { top: 0 }
+
+    .training-section__slider__card:hover :where(.rotate, .slider-card__image__description) { left: 0; }
+
+    .rotate,
+    .slider-card__image__square,
+    .slider-card__image__square::before { border-radius: 0 }
+
+
+/* Slider Control Arrow */
+
+
+.training-section__slider__control {
+    position: absolute;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 10%;
+}
+
+[class*="arrow"]  { background-color: var(--theme-medium-red)  }
+
+
+}
+
+
+/*         1200px      */
+
+@media (max-width: 75em) {
+    .section-programs__wrapper .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow: hidden;
+        width: 50%;
+    }
+
+    .section-programs__card { flex: 1 0 48%; }
+
+    .section-programs__slider__control { 
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    .section-programs__img__background {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        object-position: 10% -50%; 
+
+    }
+
+    .opening-hours { 
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .opening-hours__inner { align-items: center }
+
+    .opening-hours__img__background__wrapper { 
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        filter: brightness(0.8);
+    }    
+}
+
+
+
+/*         1000px      */
+
+@media (max-width: 62.50em) {
+
+    .navbar { background-color: black; }
+
+    .packages__card__wrapper { width: 80%; height: 50%;  }
+
+    .packages-section { margin-block-start: 2rem  }
+
+    .hero-banner.slider { height: 100%; top: 80px }
+
+    .hero-banner__slider.active { display: flex; text-align: center }
+
+    .section-programs__wrapper .container { width: 60%  }
+
+    .section-programs container-image-background img { width: 100% }
+
+    .section-programs__img__background { width: 100%; }
+
+    .classes-schedule__wrapper-cards-items { width: 100%; }
+   
+  
+}
+
+/*         800px      */
+
+@media (max-width: 50em) {
+
+    .place-content { height: 90% }
+
+
+    .slider-image-container img { object-fit: cover; height: 100% }
+
+    .training-section { height: 100vh }
+
+    .training-section__slider__control { bottom: -10% }
+
+
+
+    .training-section__caption { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .training-section__slider__card { flex: 1 0 100%; margin-block-end: 1rem }
+
+    .slider-card__image { box-shadow: 4px 4px 10px 4px var(--theme-black) }
+
+    .slider-card__title { margin-inline: auto }
+
+
+    .section-programs__wrapper .container { width: 80% }
+
+    .classes-schedule__wrapper-cards-items { width: 100%; }
+
+    .opening-hours__inner__description { width: 100%; }
+
+    .opening-hours__img__background__wrapper { object-position: 30% center }
+
+    .footer__card { flex: 1 0 100%; }
+
+
+}
+
+/*         700px      */ 
+
+@media (max-width: 43.75em) {
+
+    
+    .slider-image-container img,
+    .training-section {  height: 700px }
+
+    .classes-schedule__card { flex: 1 0 100% }
+
+    .classes-schedule__wrapper-cards-items { width: 80% }
+
+    .opening-hours__img__background__wrapper { object-position: 40% center }
+
+}
+
+/*         500px      */
+
+@media (max-width: 31.25em) {
+
+
+    .opening-hours__img__background__wrapper .container-image-background > img { object-position: 40% }
+
+
+    .packages__card__wrapper { width: 100%  }
+    .packages__card { margin-block: 1rem; }
+
+    .training-section__slider__card { width: 50% }
+
+    .section-programs__card { flex: 1 0 calc(100% - 8px); height: 80%;  }
+
+    .section-programs__wrapper .container { width: 100% }
+
+    .classes-schedule__caption { text-align: center }
+
+    .classes-schedule__wrapper-cards-items { width: 100% }
+
+    .opening-hours__img__background__wrapper { object-position: 70% center }
+
+
+    .exercises__container .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exercise__cta { text-align: center }
+
+    .exercises__fitness { transform: rotate(0); }
+
+    .footer { justify-content: center; }
+
+
+}
+
+@media ( (max-width: 100px) and (orientation: landscape) ) {
+    .main-links { margin-block-start: 80px }
+}
+
+
+@media ((max-width: 800px) and  (orientation: landscape)) {
+
+    .overlay { overflow-y: scroll }
+
+    .overlay button { width: 50%; margin-inline: auto }
+
+
+    .section-programs { height: 800px }
+
+    .training-section { height: 800px }
+
+    .training-section__slider__control { bottom: -10%; }
+
+    .opening-hours .opening-hours__img__background__wrapper img { display: none }
+    .training-section { height: 700px }
+    .slider-image__container, [class*="slider__image"], [class*="image__background"], .hero-banner__slider {
+        display: none;
+    }
+    .packages { margin-block-start: 10rem; }
+}
+
+@media ( (max-width: 400px) and (orientation: landscape) ) {
+    .full-height { height: 1000px }
+    .section-programs { height: 800px }
+    .section-programs__slider { height: 100%; }
+}

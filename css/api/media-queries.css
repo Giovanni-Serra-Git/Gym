@@ -1,0 +1,125 @@
+@media (max-width: 75em) {
+
+    /*       BODY PART LIST          */
+
+    .body-part-list-slider,
+    .exercise-similar-slider { width: 80% } 
+
+    .body-part-card { flex: 1 0 44% }
+}
+
+@media (max-width: 1800px) {
+
+    /*       BODY PART LIST          */
+
+    .body-part-list-slider__wrapper { gap: 4rem; }
+    
+}
+
+@media (max-width: 1600px) {
+
+     /*       SHOW RESULTS CARD         */
+
+    .show-result__card { 
+        flex: 1 0 32%;
+        border: 1px solid black;
+    }
+}
+
+@media (max-width: 1500px) {
+
+    .exercises-similar .container { padding-inline: 0 }
+
+    .exercise-similar-slider__wrapper a,
+    .exercise-equipment-slider__wrapper a { flex: 1 0 48% }
+
+    /*       BODY PART LIST          */
+
+    .body-part-list-slider__wrapper,
+    .exercise-similar-slider__wrapper { gap: 3rem; }
+    
+}
+
+@media (max-width: 1300px) {
+
+    .exercise__picture { width: 60% }
+
+    .exercise-details__container { text-align: center }
+
+    .card-wrapper { justify-content: space-around }
+
+    .exercise-details__description__muscles { flex-direction: row; justify-content: center;  }
+
+    /* Youtube Section -- Show Result Exercises Similar */
+
+    .exercises-youtube-videos,
+    .exercises-similar__caption { text-align: center }
+
+    .exercises-youtube-videos-slider__wrapper a { flex: 1 0 50%; }
+
+
+}
+
+@media (max-width: 1200px) {
+
+    /*       BODY PART LIST          */
+
+    
+    .card-wrapper a { flex: 1 0 48%; }
+
+    .exercise__wrapper { flex-direction: column }
+
+    .exercise__picture { order: 1 }
+
+    .exercise__picture  { width: 100%; height: 100%; }
+
+    .exercise-similar-slider__wrapper { justify-content: flex-start }
+    .exercise-similar-slider__wrapper a,
+    .exercise-equipment-slider__wrapper a { flex: 1 0 100%; }
+
+}
+
+@media (max-width: 1000px) {
+    .show-results-container { justify-content: center }
+}
+
+@media (max-width: 700px) {
+
+    /*       BODY PART LIST          */
+
+    .body-part-card{ flex: 1 0 100% }
+    /* .body-part-list-slider__wrapper { gap: 3rem; } */
+
+    .show-result__card {
+        flex: 1 0 32%;
+        border: 1px solid black;
+    }
+
+    .card-wrapper a  { flex: 1 0 100% }
+
+    /*       SHOW RESULTS CARD         */
+
+    .show-results-container { justify-content: flex-start }
+
+    .show-result__card { 
+        flex: 1 0 100%;
+        border: 1px solid black;
+    }
+
+    /* Details Exercises Caption */
+
+    :root {
+        --fs-200: 18px;
+    }
+
+    .exercise-details__description__muscles { flex-direction: column; text-align: center; }
+
+    .card-icon { justify-content: flex-start; text-align: center; align-items: center; }
+
+    .exercise__picture img { width: 100%; height: 100%; }
+
+    /* Youtube Search Channel */
+
+    .exercises-youtube-videos-slider__wrapper a { flex: 1 0 100%; }
+}
+
