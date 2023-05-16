@@ -26,7 +26,7 @@ export const createCard = function(exercise, parentCard, slider) {
     let linkCard = document.createElement("a");
     let card = document.createElement("div");
 
-    linkCard.setAttribute("href", "details.html");
+    linkCard.setAttribute("href", "html/details.html");
     linkCard.setAttribute("target", "_blank");
     linkCard.setAttribute("link-card", "link-card")
 
