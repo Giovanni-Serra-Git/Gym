@@ -152,7 +152,7 @@
     padding-block: 0.5em;
 }
 
-.exercises-youtube-videos-slider__wrapper a { max-width: calc(400px - 16px) }
+/* .exercises-youtube-videos-slider__wrapper a { max-width: calc(100% - 16px) } */
 
 .exercises-similar__icon { 
     border-radius: 10px;
@@ -197,7 +197,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 90%;
+    max-width: 200px;
 }
 
 
@@ -221,10 +221,12 @@
 
 .exercise-equipment-slider__wrapper  a,
 .exercise-similar-slider__wrapper  a,
-.exercises-related-youtube-videos-slider__wrapper iframe  { flex: 1 0 24%  }
+.exercises-related-youtube-videos-slider__wrapper iframe  { 
+    flex: 1 0 24%;
+}
 
 .exercise-equipment__card,
-.card-wrapper-container__card  { height: 100%; }
+.card-wrapper-container__card  { height: 100%; } 
 
 
 .exercise-equipment__card__caption p,
@@ -232,3 +234,4 @@
 .card-wrapper-container__card__caption { text-align: center }
 
 
+.exercises-youtube-videos__card .yt-image { width: 100%; height: 300px; object-fit: cover }

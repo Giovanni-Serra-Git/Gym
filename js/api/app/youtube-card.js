@@ -9,12 +9,21 @@ let secondWord;
 function createCard(parentCard, { items }) {
 
 items.forEach(video => { 
-    const {
+    let {
     type,
     title,
     author : { bestAvatar : { url : urlAvatar  } },
     bestThumbnail : { url : urlName },
   } = video;
+
+
+  if (title.includes("-")) {
+    let symbol = title.indexOf("-");
+    title = title.slice(0,symbol);
+  } else if (title.includes("|")) {
+    let symbol = title.indexOf("|");
+    title = title.slice(0,symbol);
+  }
 
   let parent = parentCard.closest("div[parent]");
   let linkCard = document.createElement("a");
@@ -30,11 +39,10 @@ items.forEach(video => {
   card.classList.add("flex-center");
 
 
-
   card.innerHTML = `
-      <img src="${urlName}">
+      <img src="${urlName}"  class="yt-image">
       <div class="channel-description flex flex-align-center flex-between">
-          <p class="title-youtube">${title}</p>
+      <p class="title-youtube" title-youtube title="${title}">${title}</p>
           <img src="${urlAvatar}">
       </div>
   `;
