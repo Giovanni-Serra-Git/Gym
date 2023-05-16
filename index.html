@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script type="module" src="../js/hero-banner/hero-banner.js" defer></script>
+    <script type="module" src="../js/navbar/navbar.js" defer></script>
+    <script type="module" src="../js/training-section/slider.js" defer></script>
+    <script src="../js/media-queries/media-queries.js" defer></script>
+    <script type="module" src="../js/animation/animation.js" defer></script>
+    </link>
+    <title>Fitness</title> 
+</head>
+<body>
+    <nav class="navbar" navbar>  
+            <div class="container navbar__wrapper"> 
+                <div class="navbar__inner flex"> 
+                    <div class="logo flex"  style="--gap: 1.5rem">
+                        <img src="../assets/img/logo/logo.png" alt="Company Logo">
+                        <p class="logo-caption fs-200 capitalize letter-spacing-1 fw-bold color-theme-white"><a href="index.html"> fit gim</a></p>
+                    </div>
+                    <ul class="fs-150  main-links main-links__large__screen flex letter-spacing-1 color-theme-white capitalize" role="list">
+                        <li><a href="index.html" class="active">home</a></li> 
+                        <li><a href="#section-training" class="active">training section</a></li> 
+                        <li><a href="#section-programs">programs</a></li>
+                        <li><a href="#section-opening-hours">opening hours</a></li>
+                        <li><a href="#section-packages">packages</a></li>
+                        <li><a href="#section-classes">classes</a></li> 
+                        <li><a href="#section-exercises">exercises</a></li>
+                        <li><a href="#section-footer">contact us</a></li>
+                    </ul>
+                    <button class="button navbar__button button_size_s button_doubled letter-spacing-1 bg-theme-light-red capitalize fs-100">join us</button>
+                    <div class="navbar-menu-trigger">
+                        <div class="hamburger-menu flex flex-center">
+                            <i class="hamburger-menu-open fa fa-bars fa-2x hamburger-menu-fa-bars" hamburger-menu-open></i>
+                            <i class="hamburger-menu-close fa fa-times fa-2x hamburger-menu-fa-times" hamburger-menu-close></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay" overlay>
+                <div class="container flex flex-column">
+                    <ul class="main-links main-links__collapse fs-200 flex flex-column fw-bold letter-spacing-1
+                               color-theme-white capitalize text-center" role="list">
+                               <!-- <li><a href="#index.html" class="active">home</a></li>  -->
+                               <li><a href="#section-training" class="active">training section</a></li> 
+                               <li><a href="#section-programs">programs</a></li>
+                               <li><a href="#section-opening-hours">opening hours</a></li>
+                               <li><a href="#section-packages">packages</a></li>
+                               <li><a href="#section-classes">classes</a></li> 
+                               <li><a href="#section-exercises">exercises</a></li>
+                               <li><a href="#section-footer">contact us</a></li>
+                        <button class="button navbar__button fw-bold button_doubled button_doubled_black
+                                       letter-spacing-1 bg-theme-white capitalize fs-100 mb-2 pb-1">join us</button>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+     <!-- Probably set setTimeOut for automatic animation -->
+    <section class="hero-banner-section">
+        <div class="hero-banner slider relative">  
+
+            <!-- Slider Image One --> 
+            <div class="slider-image-container slider-one active" slider-image-container="0">
+                <!-- <img class="hero-banner__slider__image slider__image__extra__small" src="../assets/img/hero-slider/slider_one_extra_small.jpg" alt="Slide One Extra Small"  hero-banner-slider-image>
+                <img class="hero-banner__slider__image slider__image__small" src="../assets/img/hero-slider/slider__one__small.jpg" alt="Slide One Small"  hero-banner-slider-image> -->
+                <img class="hero-banner__slider__image slider__image__medium" src="../assets/img/hero-slider/slider_one_medium.jpg" alt="Slide One Medium" hero-banner-slider-image>
+                <!-- <img class="hero-banner__slider__image slider__image__large active" src="../assets/img/hero-slider/slider__one__large.jpg" alt="Slide One Large" hero-banner-slider-image> -->
+            </div>
+
+            
+            <!-- Slider Image Two -->
+         
+            <div class="slider-image-container slider-two" slider-image-container="1"> 
+                <!-- <img class="hero-banner__slider__image slider__image__extra__small" src="../assets/img/hero-slider/slider_two_extra_small.png" alt="Slide Two Extra Small"  hero-banner-slider-image>
+                <img class="hero-banner__slider__image slider__image__small" src="../assets/img/hero-slider/slider_two_small.png" alt="Slide Two Small" hero-banner-slider-image> -->
+                <img class="hero-banner__slider__image slider__image__medium" src="../assets/img/hero-slider/slider_two_medium.png" alt="Slide Two Medium" hero-banner-slider-image>
+                <!-- <img class="hero-banner__slider__image slider__image__large active" src="../assets/img/hero-slider/slider_two_large.png" alt="Slide Two Large" hero-banner-slider-image> -->
+            </div>
+    
+
+            <!-- Slider Image Three -->
+            <div class="slider-image-container slider-three" slider-image-container="2">
+                <!-- <img class="hero-banner__slider__image slider__image__extra__small" src="../assets/img/hero-slider/slider_three_extra__small.png" alt="Slide Three Extra Small" hero-banner-slider-image>
+                <img class="hero-banner__slider__image slider__image__small" src="../assets/img/hero-slider/slider_three_small.png" alt="Slide Three Small" hero-banner-slider-image> -->
+                <img class="hero-banner__slider__image slider__image__medium" src="../assets/img/hero-slider/slider_three_medium.png" alt="Slide Three Medium" hero-banner-slider-image>
+                <!-- <img class="hero-banner__slider__image slider__image__large" src="../assets/img/hero-slider/slider_three_large.png" alt="Slide Three Large" hero-banner-slider-image> -->
+            </div>
+       
+ 
+
+            <div class="hero-banner__container place-content" hero-banner__container > 
+                <div class="container">
+                    <div class="hero-banner__slider slider-one flex flex-align-center active" hero-banner-slider>
+                        <div class="hero-banner__slider__caption color-theme-white line-height-1" hero-banner-slider-caption>
+                           <p class="fs-400 uppercase fw-bold">make your body</p>
+                           <p class="fs-400 uppercase fw-bold"><span class="slide-in fill-text-cta" data-text="healthy">healthy</span><span class="mi-1">&</span><span class="fill-text-cta " data-text="fit">fit</span></p>
+                           <p class="line-height-2"> Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor molestias, repellendus nostrum harum illum vero.</p>
+                           <button class="button button_size_m capitalize bg-theme-light-red mb-2 button_doubled">our classes</button>
+                       </div>
+                    </div>
+                    <div class="hero-banner__slider  slider-two grid grid-columns-two grid-center"  hero-banner-slider>
+                        <div class="hero-banner__slider__caption color-theme-white line-height-1">
+                            <p class="fs-400 uppercase fw-bold">make you be the</p>
+                            <p class="fs-400 uppercase fw-bold"><span class="slide-in fill-text-cta" data-text="runner">runner</span><span class="mi-1"></p>
+                            <p class="line-height-2"> Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor molestias, repellendus nostrum harum illum vero.</p>
+                            <button class="button button_size_m capitalize bg-theme-light-red mb-2 button_doubled">our classes</button>
+                        </div>
+                        <div class="reverse"></div>
+                    </div>
+                    <div class="hero-banner__slider  slider-three grid grid-columns-two grid-center"  hero-banner-slider>
+                        <div class="hero-banner__slider__caption color-theme-white line-height-1">
+                            <p class="fs-400 uppercase fw-bold">shape your</p>
+                            <p class="fs-400 uppercase fw-bold"><span class="slide-in fill-text-cta" data-text="perfect">perfect</span></p>
+                            <p class="fs-400 uppercase fw-bold">body</p>
+                            <p class="line-height-2"> Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor molestias, repellendus nostrum harum illum vero.</p>
+                            <button class="button button_size_m capitalize bg-theme-light-red mb-2 button_doubled">our classes</button>
+                        </div>
+                    </div>
+                    <div class="hero-banner-bullets flex">
+                        <div class="bullet active" slider-control="0"></div> 
+                        <div class="bullet" slider-control="1"></div>
+                        <div class="bullet" slider-control="2"></div>
+                    </div>                 
+                </div>
+                <!-- <div class="hero-banner-bullets flex">
+                    <div class="bullet active" slider-control="0"></div> 
+                    <div class="bullet" slider-control="1"></div>
+                    <div class="bullet" slider-control="2"></div>
+                </div>                  -->
+            </div>       
+        </div>
+     </section> 
+    <section id="section-training">
+        <div class="training-section relative">
+            <div class="container-image-background">
+                <img class="image__background__extra__small" src="../assets/img/training-section/training-section__bg__extra__small.jpg" alt="Slide Three Extra Small" image-background image-background-extra-small>
+                <img class="image__background__small" src="../assets/img/training-section/training-section__bg__small.jpg" alt="Slide Three Small" image-background image-background-small>
+                <img class="image__background__medium" src="../assets/img/training-section/training-section__bg__medium.jpg" alt="Slide Three Medium" image-background image-background-medium>
+            </div> 
+        
+            <!-- <img clas="image__background__large" src="../assets/img/training-section/training-section__bg__large.jpg" alt="Training Section Background Image Woman Large" image-background-large> -->
+
+            <div class="training-section__wrapper place-content" parent-slider> 
+                <!-- <div class="training-section__slider__control slider flex flex-center">
+                    <div class="arrow-left flex flex-center" arrow-left><span class="fs-200 color-theme-white">&lharu;</span></div>
+                    <div class="arrow-right flex flex-center" arrow-right><span class="fs-200 color-theme-white">&#8640;</span></div>
+                </div> -->
+                <div class="container flex flex-align-center flex-between">
+                    <div class="training-section__caption line-height-1" training-section-caption>
+                        <p class="fs-400 uppercase fw-bold"><span class="slide-in" data-text="never" slide-in>never</span><span class="mi-1">get</span></p>
+                        <p class="fs-400 uppercase fw-bold"><span class="slide-in" data-text="bored" slide-in>bored</span><span class="mi-1">again</span>
+                        <p class="line-height-2 color-theme-white">Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit.</p>
+                        <button class="button button_size_m capitalize bg-theme-light-red mb-2 button_doubled">start now!</button>
+                    </div>
+                    <div class="training-section__slider__control slider flex flex-center">
+                        <div class="arrow-left flex flex-center" arrow-left><span class="fs-200 color-theme-white">&lharu;</span></div>
+                        <div class="arrow-right flex flex-center" arrow-right><span class="fs-200 color-theme-white">&#8640;</span></div>
+                    </div> 
+                    <div class="training-section__slider flex" training-section-slider training-one>
+                        <div class="training-section__slider__wrapper flex flex-align-center" training-section-slider-wrapper slider-wrapper>
+                            <div class="training-section__slider__card " training-section-slider-card card>
+                                <div class="slider-card__title">
+                                    <span class="fs-150 uppercase fw-bold color-theme-white letter-spacing-1 mb-1 d-inline-block">Your month 1 workout plan</span>
+                                </div>  
+                                <div class="slider-card__image flex" aria-label="slider-card__image__0">
+                                    <img src="../assets/img/training-section/training_section_slider_0.png" alt="Training Section Slider 0">
+                                       <div class="rotate">
+                                             <div class="slider-card__image__square"></div>
+                                       </div> 
+                                    <div class="slider-card__image__icon"> 
+                                        <img src="../assets/img/training-section/training-section__icon__kettlebell.png" alt="Training Section Icon Kettlebell">
+                                    </div>
+                                    <div class="slider-card__image__description">
+                                        <p class="fs-150 fw-bold capitalize color-theme-black slider-card__image__title">power lifting</p>
+                                        <p class="fs-100 capitalize color-theme-gray slider-card__image__hours">Sat: 10:00am-12:00am</p>
+                                        <button class="button button_size_s capitalize bg-theme-light-red b-radius-none mb-1">join us</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="training-section__slider__card" training-section-slider-card card>
+                                <div class="slider-card__title">
+                                    <span class="fs-150 uppercase fw-bold color-theme-white letter-spacing-1 mb-1 d-inline-block">Your month 2 workout plan</span>
+                                </div>
+                                <div class="slider-card__image flex" aria-label="slider-card__image__1">
+                                       <img src="../assets/img/training-section/training_section_slider_1.png" alt="Training Section Slider 2">
+                                       <div class="rotate">
+                                             <div class="slider-card__image__square"></div>
+                                       </div>
+                                    <div class="slider-card__image__icon">
+                                        <img src="../assets/img/training-section/training-section__icon__stretching.png" alt="Training Section Icon Kettlebell">
+                                    </div>
+                                    <div class="slider-card__image__description">
+                                        <p class="fs-150 fw-bold capitalize color-theme-black slider-card__image__title">stretch session</p>
+                                        <p class="fs-100 capitalize color-theme-gray slider-card__image__hours">sun: 8:00am - 10:00am</p>
+                                        <button class="button button_size_s capitalize bg-theme-light-red b-radius-none mb-1">join us</button>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="training-section__slider__card" training-section-slider-card card>
+                                <div class="slider-card__title">
+                                    <span class="fs-150 uppercase fw-bold color-theme-white letter-spacing-1 mb-1 d-inline-block">Your month 3 workout plan</span>
+                                </div>
+                                <div class="slider-card__image flex" aria-label="slider-card__image__2">
+                                       <img src="../assets/img/training-section/training_section_slider_2.png" alt="Training Section Slider 3">
+                                       <div class="rotate">
+                                             <div class="slider-card__image__square"></div>
+                                       </div>
+                                    <div class="slider-card__image__icon">
+                                        <img src="../assets/img/training-section/training-section__icon__pullups.png" alt="Training Section Icon Kettlebell">
+                                    </div>
+                                    <div class="slider-card__image__description">
+                                        <p class="fs-150 fw-bold capitalize color-theme-black slider-card__image__title">master pull ups</p>
+                                        <p class="fs-100 capitalize color-theme-gray slider-card__image__hours">fri: 09:00am - 2:00pm</p>
+                                        <button class="button button_size_s capitalize bg-theme-light-red b-radius-none mb-1">join us</button>
+                                    </div>                               
+                                </div> 
+                            </div>
+                            <div class="training-section__slider__card" training-section-slider-card card>
+                                <div class="slider-card__title">
+                                    <span class="fs-150 uppercase fw-bold color-theme-white letter-spacing-1 mb-1 d-inline-block">Your month 4 workout plan</span>
+                                </div>
+                                <div class="slider-card__image flex" aria-label="slider-card__image__3">
+                                       <img src="../assets/img/training-section/training_section_slider_3.png" alt="Training Section Slider 4">
+                                       <div class="rotate">
+                                             <div class="slider-card__image__square"></div>
+                                       </div>
+                                    <div class="slider-card__image__icon">
+                                        <img src="../assets/img/training-section/training-section__icon__squats.png" alt="Training Section Icon Kettlebell">
+                                    </div>
+                                    <div class="slider-card__image__description">
+                                        <p class="fs-150 fw-bold capitalize color-theme-black slider-card__image__title">iron squat</p>
+                                        <p class="fs-100 capitalize color-theme-gray slider-card__image__hours">Sat: 12:00am - 2:00am</p>
+                                        <button class="button button_size_s capitalize bg-theme-light-red b-radius-none mb-1">join us</button>
+                                    </div>                                  
+                                </div>
+                            </div>
+                            <div class="training-section__slider__card" training-section-slider-card>
+                                <div class="slider-card__title">
+                                    <span class="fs-150 uppercase fw-bold color-theme-white letter-spacing-1 mb-1 d-inline-block">Your month 5 workout plan</span>
+                                </div>
+                                <div class="slider-card__image flex" aria-label="slider-card__image__0">
+                                       <img src="../assets/img/training-section/training_section_slider_4.png" alt="Training Section Slider 5">
+                                       <div class="rotate">
+                                             <div class="slider-card__image__square"></div>
+                                       </div>
+                                    <div class="slider-card__image__icon">
+                                        <img src="../assets/img/training-section/training-section__icon__pushups.png" alt="Training Section Icon Kettlebell">
+                                    </div>
+                                    <div class="slider-card__image__description">
+                                        <p class="fs-150 fw-bold capitalize color-theme-black slider-card__image__title">push your limits up</p>
+                                        <p class="fs-100 capitalize color-theme-gray slider-card__image__hours">Sat: 10:00am - 12:00am</p>
+                                        <button class="button button_size_s capitalize bg-theme-light-red b-radius-none mb-1">join us</button>
+                                    </div>                              
+                                </div>
+                            </div>    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+          
+    </section>
+    <section id="section-programs">  
+        <div class="section-programs relative full-height relative" section-programs>          
+                <div class="section-programs__wrapper flex place-content" parent-slider section-programs__wrapper>
+                    <div class="container">
+                        <div class="section-programs__slider relative">
+                            <div class="section-programs__slider__control slider flex"> 
+                                <div class="arrow-left flex flex-center" arrow-left><span class="fs-200 color-theme-white">&lharu;</span></div>
+                                <div class="arrow-right flex flex-center" arrow-right><span class="fs-200 color-theme-white">&#8640;</span></div>
+                            </div>
+                            <div class="section-programs__slider__wrapper relative" slider-wrapper>
+                                <!-- <div> -->
+                                    <div class="section-programs__card flex flex-center relative" card>
+                                        <div class="section-programs__card__wrapper flex flex-column flex-center">
+                                            <img src="../assets/img/section-programs/muscle.png" class="section-programs__card__icon" alt="Icon Muscle Flex">
+                                            <div class="section-programs__card__caption">
+                                                <p class="fs-150 capitalize color-theme-medium-red">flex your muscles</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- container for 2 elements -->
+                                    <div class="section-programs__container__middle__elements flex">
+                                        <div class="section-programs__card flex flex-center relative">
+                                            <div class="section-programs__card__wrapper flex flex-column flex-center">
+                                                <img src="../assets/img/section-programs/treadmill.png" class="section-programs__card__icon" alt="Icon Cardio">
+                                                <div class="section-programs__card__caption">
+                                                    <p class="fs-150 capitalize color-theme-medium-red">cardio</p> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="section-programs__card flex flex-center relative">
+                                            <div class="section-programs__card__wrapper flex flex-column flex-center">
+                                                <img src="../assets/img/section-programs/report.png" class="section-programs__card__icon" alt="Icon Target Exercises">
+                                                <div class="section-programs__card__caption">
+                                                    <p class="fs-150 capitalize color-theme-medium-red">set goals</p>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End -->
+                                    <div class="section-programs__card section-programs__card__element flex flex-center relative" card>
+                                        <div class="section-programs__card__wrapper flex flex-column flex-center">
+                                            <img src="../assets/img/section-programs/treadmill.png" class="section-programs__card__icon" alt="Icon Target Exercises">
+                                            <div class="section-programs__card__caption">
+                                                <p class="fs-150 capitalize color-theme-medium-red">cardio</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section-programs__card section-programs__card__element flex flex-center relative" card>
+                                        <div class="section-programs__card__wrapper flex flex-column flex-center">
+                                            <img src="../assets/img/section-programs/report.png" class="section-programs__card__icon" alt="Icon Target Exercises">
+                                            <div class="section-programs__card__caption">
+                                                <p class="fs-150 capitalize color-theme-medium-red">set goals</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="section-programs__card flex flex-center relative" card>
+                                        <div class="section-programs__card__wrapper flex flex-column flex-center">
+                                            <img src="../assets/img/section-programs/weight_lift.png" class="section-programs__card__icon" alt="Icon Target Exercises">
+                                            <div class="section-programs__card__caption">
+                                                <p class="fs-150 capitalize color-theme-medium-red">weightlifting</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <!-- </div> --> 
+                    </div>
+                    <div class="separator">
+                        <div class="oblique"></div> 
+                    </div>
+                </div>
+        </div> 
+    </section>  
+    <section class="section-opening-hours" id="section-opening-hours"> 
+        <div class="bg-theme-medium-black relative" section-opening-hours>  
+            <div class="opening-hours container half-height flex relative">  
+                    <!-- BACKGROUND IMAGE --> 
+                    <div class="opening-hours__inner flow color-theme-white flex flex-column line-height-1">
+                        <div class="flex flex-align-center">
+                            <div class="opening hours__inner__clock d-inline-block">
+                                <img src="../assets/img/opening-hours/opening_hours_clock.png" alt="Icon Clock">
+                            </div>
+                            <div class="opening-hours__inner__caption fs-400 fw-bold line-height-1">
+                                <p class="fs-400 fw-bold uppercase"><span class="slide-in" data-text="opening" slide-in>opening </span>hours</p>
+                            </div>
+                        </div> 
+                        <p class="opening-hours__inner__description fw-300"> Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Cum illo commodi modi deleniti ullam fugit velit eaque, nesciunt maiores aliquam iste dolore
+                            doloremque quos tenetur! At tempora saepe amet rerum. </p>
+                        <div class="opening-hours__inner__days flex">
+                            <div class="opening-hours__inner__days__card flow">
+                                <p class="fs-150 opening-hours__inner__days__card__caption capitalize fw-bold color-theme-dark-red bg-theme-gray pb-1 pi-1">from monday to friday</p>
+                                <p class="fs-100 opening-hours__inner__days__card__description capitalize bg-theme-dark-black pb-1 pi-1">5.30 am to 7.30 pm</p>
+                            </div>
+                            <div class="opening-hours__inner__days__card flow">
+                                <p class="fs-150 opening-hours__inner__days__card__caption capitalize fw-bold color-theme-dark-red bg-theme-gray pb-1 pi-1">form saturday to sunday</p>
+                                <p class="fs-100 opening-hours__inner__days__card__description  capitalize bg-theme-dark-black pb-1 pi-1">10 am to 02.00 pm</p>
+                            </div>
+                        </div>  
+                    </div> 
+                    <div class="opening-hours__img__background__wrapper" alt="Opening Hours Woman Background">
+                        <div class="container-image-background">
+                            <img class="image__background__small" src="../assets/img/opening-hours/opening-hours__small.png" alt="Background Image Woman Small" image-background image-background-small>
+                            <img class="image__background__medium" src="../assets/img/opening-hours/opening-hours__medium.png" alt="Background Image Woman Medium" image-background image-background-medium>
+                        </div>
+                            <!-- <img class="image__background__extra__small" src="../assets/img/opening-hours/opening-hours__extra__small.png" alt="Background Image Woman Extra Small" image-background image-background-extra-small> -->
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="packages-section" id="section-packages" >
+        <div class="packages flex flex-align-center full-height" packages> 
+            <div class="container">
+                <div class="packages__wrapper flex flex-column">
+                    <div class="packages__caption line-height-1" packages-caption>
+                        <p class="fs-400 uppercase fw-bold"><span class="slide-in" data-text="ready" slide-in>ready</span><span class="mi-1">to start your journey with us</span></p>
+                    </div>
+                    <div class="packages__card__wrapper flex"> 
+                        <div class="card packages__card flex flex-column relative">
+                            <div class="packages__card__icon">
+                                <img src="../assets/img/packages/packages_crown_1.png" alt="packages Crown Icon 1">
+                            </div>
+                            <p class="packages__card__caption capitalize fs-200 color-theme-white "> basic plan </p>
+                            <div class="packages__card__price flex flex-align-center">
+                                <p class="fs-400 fw-bold color-theme-light-red">$</p>
+                                <p class="fs-400 color-theme-white">25</p>
+                            </div>
+                            <div class="packages__card__description flex">
+                                <img src="../assets/img/packages/packages_check-mark.png" alt="Icon Check Mark">
+                                <p class="fs-150 color-theme-white">2 hours of exercises</p>
+                            </div>
+                            <div class="packages__card__description flex">
+                                <img src="../assets/img/packages/packages_check-mark.png" alt="Icon Check Mark">
+                                <p class="fs-150 color-theme-white">free consultaion to coaches</p>
+                            </div>
+                            <div class="packages__card__description flex">
+                                <img src="../assets/img/packages/packages_check-mark.png" alt="Icon Check Mark">
+                                <p class="fs-150 color-theme-white">access to the community</p>
+                            </div>
+                            <div class="packages__card__button">
+                                <button class="button button_size_m mb-1 capitalize bg-theme-medium-red button_doubled d-block">join now</button>
+                            </div>
+                            <div>
+                                <div class="shapes-wrapper_1">
+                                    <div class="shape-1"></div>
+                                </div>
+                            </div>
+                            <div  class="shapes-content">
+                                <div class="shapes-wrapper_2">
+                                    <div class="shape-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card packages__card packages__card__stretched flex flex-column relative">
+                            <div class="packages__card__icon">
+                                <img src="../assets/img/packages/packages_crown_2.png" alt="packages Crown Icon 2">
+                            </div>
+                            <p class="packages__card__caption capitalize fs-200 color-theme-white"> premium plan </p>
+                            <div class="packages__card__price flex flex-align-center">
+                                <p class="fs-400 fw-bold color-theme-light-red">$</p>
+                                <p class="fs-400 color-theme-white">45</p>
+                            </div>
+                            <div class="packages__card__description flex">
+                                <img src="../assets/img/packages/packages_check-mark.png" alt="Icon Check Mark">
+                                <p class="fs-150 color-theme-white">5 hours of exercises</p>
+                            </div>
+                            <div class="packages__card__description flex">
+                                <img src="../assets/img/packages/packages_check-mark.png" alt="Icon Check Mark">
+                                <p class="fs-150 color-theme-white">free consultaion to coaches</p>
+                            </div>
+                            <div class="packages__card__description flex">
+                                <img src="../assets/img/packages/packages_check-mark.png" alt="Icon Check Mark">
+                                <p class="fs-150 color-theme-white">access to the minibar</p>
+                            </div>
+                            <div class="packages__card__button"> 
+                                <button class="button button_size_m mb-1 capitalize bg-theme-medium-red button_doubled d-block">join now</button>
+                            </div>
+                            <div>
+                                <div class="shapes-wrapper_1">
+                                    <div class="shape-1"></div>
+                                </div>
+                            </div>
+                            <div class="shapes-content">
+                                <div class="shapes-wrapper_2">
+                                    <div class="shape-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card packages__card flex flex-column relative">
+                            <div class="packages__card__icon">
+                                <img src="../assets/img/packages/packages_crown_3.png" alt="Packages Crown Icon 3">
+                            </div>
+                            <p class="packages__card__caption capitalize fs-200 capitalize color-theme-white"> pro plan </p> 
+                            <div class="packages__card__price flex flex-align-center">
+                                <p class="fs-400 fw-bold color-theme-light-red">$</p>
+                                <p class="fs-400 color-theme-white">55</p>
+                            </div>
+                            <div class="packages__card__description flex">
+                                <img src="../assets/img/packages/packages_check-mark.png" alt="Icon Check Mark">
+                                <p class="fs-150 color-theme-white">8 hours of exercises</p>
+                            </div>
+                            <div class="packages__card__description flex">
+                                <img src="../assets/img/packages/packages_check-mark.png" alt="Icon Check Mark">
+                                <p class="fs-150 color-theme-white">consulation of private coach</p>
+                            </div>
+                            <div class="packages__card__description flex">
+                                <img src="../assets/img/packages/packages_check-mark.png" alt="Icon Check Mark">
+                                <p class="fs-150 color-theme-white">free fitness merchandises</p>
+                            </div>
+                            <div class="packages__card__button">
+                                <button class="button button_size_m mb-1 capitalize bg-theme-medium-red button_doubled d-block">join now</button>
+                            </div>
+                            <div>
+                                <div class="shapes-wrapper_1">
+                                    <div class="shape-1"></div>
+                                </div>
+                            </div>
+                            <div class="shapes-content">
+                                <div class="shapes-wrapper_2">
+                                    <div class="shape-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-schedule" id="section-classes" >
+        <div class="classes-schedule full-height">
+            <div class="container classes-schedule__wrapper flex flex-column">
+                <div class="classes-schedule__caption line-height-1" classes-schedule-caption>
+                    <p class="fs-400 bold uppercase">get into shape <span class="slide-in" data-text="now" slide-in>now</span></p>
+                    <p class="fs-400 bold uppercase">our classes <span class="slide-in" data-text="schedules" slide-in>schedules</span></p>
+                </div>
+                <div class="classes-schedule__wrapper-cards-items flex">
+                    <div class="classes-schedule__card"> 
+                        <div class="classes-schedule__card__wrapper flex flex-column flex-center">
+                            <div class="flex flex-column flex-between flex-align-center flex-1" style="width: 100%;">
+                                <img class="classes-schedule__icon__logo" src="../assets/img/classes/classes-main-logo/classes_muscle.png" alt="Classes Muscle Icon">
+                                <div class="classes-schedule__card__caption color-theme-dark-red text-center">
+                                    <p class="fs-150 capitalize fw-bold">internation triathlon</p>
+                                </div>
+                                    <div class="classes-schedule__card__description flex">
+                                        <div class="classes-schedule__card__description__icon">
+                                            <img src="../assets/img/classes/classes-description/classes__clock.png"
+                                                alt="Classes Clock Icon"> 
+                                        </div>
+                                        <div class="classes-schedule__card__description__text">
+                                            <p class="fs-100 capitalize">march 15, 2023</p>
+                                            <p class="fs-100 capitalize">5.35am to 8am</p>
+                                            <p class="fs-150 classes-schedule__card__coach capitalize color-theme-dark-red text-center">tom wills</p>
+                                        </div>
+                                    </div>
+                                <button class="classes-schedule__card_button button mb-2 capitalize bg-theme-dark-red button_doubled button_doubled button_doubled_black fit-content">more details & info </button>
+                            </div>
+
+                            <div>
+                                <div class="shapes-wrapper_1">
+                                    <div class="shape-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="classes-schedule__card">
+                        <div class="classes-schedule__card__wrapper flex flex-column flex-center">
+                            <div class="flex flex-column flex-between flex-align-center flex-1" style="width: 100%;">
+                                <img class="classes-schedule__icon__logo" src="../assets/img/classes/classes-main-logo/classes_marathon.png" alt="Classes Marathon Icon">
+                                <div class="classes-schedule__card__caption color-theme-dark-red text-center">
+                                    <p class="fs-150 capitalize fw-bold">internation marathon</p>
+                                </div>
+                                    <div class="classes-schedule__card__description flex">
+                                        <div class="classes-schedule__card__description__icon">
+                                            <img src="../assets/img/classes/classes-description/classes__clock.png"
+                                                alt="Classes Clock Icon">
+                                        </div>
+                                        <div class="classes-schedule__card__description__text">
+                                            <p class="fs-100 capitalize">march 20, 2023</p>
+                                            <p class="fs-100 capitalize">10.40am to 12am</p>
+                                            <p class="fs-150 classes-schedule__card__coach capitalize color-theme-dark-red text-center">Brandon Reddish</p>
+                                        </div>
+                                    </div>
+                                <button class="button capitalize bg-theme-dark-red mb-2 button_doubled button_doubled_black classes-schedule__card_button fit-content">more details & info </button>
+                            </div>
+                            <div>
+                                <div class="shapes-wrapper_1">
+                                    <div class="shape-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="classes-schedule__card"> 
+                        <div class="classes-schedule__card__wrapper flex flex-column flex-center">
+                            <div class="flex flex-column flex-between flex-align-center flex-1" style="width: 100%;">
+                                <img class="classes-schedule__icon__logo" src="../assets/img/classes/classes-main-logo/classes_swimming.png" alt="Classes Swimming Icon">
+                                <div class="classes-schedule__card__caption color-theme-dark-red text-center">
+                                    <p class="fs-150 capitalize fw-bold">internation swimming</p>
+                                </div>
+                                    <div class="classes-schedule__card__description flex">
+                                        <div class="classes-schedule__card__description__icon">
+                                            <img src="../assets/img/classes/classes-description/classes__clock.png"
+                                                alt="Classes Clock Icon">
+                                        </div>
+                                        <div class="classes-schedule__card__description__text">
+                                            <p class="fs-100 capitalize">march 15, 2023</p>
+                                            <p class="fs-100 capitalize">06.00am to 9am</p>
+                                            <p class="fs-150 classes-schedule__card__coach capitalize color-theme-dark-red text-center">frederich black</p>
+                                        </div>
+                                    </div>
+                                <button class="button capitalize bg-theme-dark-red mb-2 button_doubled button_doubled_black classes-schedule__card_button fit-content">more details & info </button>
+                            </div>
+                            <div>
+                                <div class="shapes-wrapper_1">
+                                    <div class="shape-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="classes-schedule__card">
+                        <div class="classes-schedule__card__wrapper flex flex-column flex-center">
+                            <div class="flex flex-column flex-between flex-align-center flex-1" style="width: 100%;">
+                                <img class="classes-schedule__icon__logo" src="../assets/img/classes/classes-main-logo/classes_decathlon.png" alt="Classes decathlon Icon">
+                                <div class="classes-schedule__card__caption color-theme-dark-red text-center">
+                                    <p class="fs-150 capitalize fw-bold">internation decathlon</p>
+                                </div>
+                                    <div class="classes-schedule__card__description flex">
+                                        <div class="classes-schedule__card__description__icon">
+                                            <img src="../assets/img/classes/classes-description/classes__clock.png"
+                                                alt="Classes Clock Icon">
+                                        </div>
+                                        <div class="classes-schedule__card__description__text">
+                                            <p class="fs-100 capitalize">march 5, 2023</p>
+                                            <p class="fs-100 capitalize">02.00pm to 8pm</p>
+                                            <p class="fs-150 classes-schedule__card__coach capitalize color-theme-dark-red text-center">Steven Jill</p>
+                                        </div>
+                                    </div>
+                                <button class="button capitalize bg-theme-dark-red mb-2 button_doubled button_doubled_black classes-schedule__card_button fit-content">more details & info </button>
+                            </div>
+                            <div>
+                                <div class="shapes-wrapper_1">
+                                    <div class="shape-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-exercises">
+         <div class="exercises relative"  exercises> 
+            <div class="exercises__container place-content z-index-1">
+                <div class="container flex flex-align-center ">
+                    <div class="exercise__cta flex flex-column line-height-1 z-index-1">
+                        <p class="fs-400 uppercase fw-bold color-theme-white">start <span class="slide-in" data-text="exercising" slide-in>exercising</span></p>
+                        <div class="z-index-1 mb-1">
+                            <a href="exercises.html"
+                            class="button capitalize bg-theme-dark-red mb-2 button_doubled button_doubled fit-content">click me and start</a>
+                        </div>
+                    </div>
+                    <div class="exercises__fitness flex z-index-1" exercises-fitness>
+                        <!-- delay-container__one ----- delay-one -->
+                        <div  delay-container delay-one-container>
+                            <p class="uppercase" delay-one delay>f</p>
+                        </div>
+                        <!-- delay-container__two ----- delay-two -->
+                        <div  delay-container delay-two-container>
+                            <p class="uppercase" delay-two delay>i</p> 
+                        </div>
+                        <!-- delay-container__three ----- delay-three -->
+                        <div  delay-container delay-three-container>
+                            <p class="uppercase" delay-three delay>t</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-image-background"> 
+                <img class="image__background__extra__small" src="../assets/img/exercises/exercises_medium__extra__small.jpg" alt="Exercises Image Woman Background Extra Small" image-background image-background-extra-small>
+                <img class="image__background__small" src="../assets/img/exercises/exercises_small.jpg" alt="Exercises Image Woman Background Small" image-background image-background-small>
+                <img class="image__background__medium" src="../assets/img/exercises/exercises_medium.jpg" alt="Exercises Image Woman Background Medium" image-background image-background-medium>
+            </div>          
+        </div>
+    </section id="section-footer">
+    <footer class="bg-theme-dark-black pb-1" >
+        <div class="container">
+            <div class="footer bg-theme-dark flex">
+                <div class="footer__card footer__socials flex flex-column flex-center">
+                    <div class="flex flex-center mb-1">
+                     <img src="../assets/img/logo/logo.png" alt="Footer Logo Company">
+                     <p class="fs-200 capitalize">fit gym</p>
+                    </div>
+                     <div class="footer__socials__list flex flex-between mb-1">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                     </div>
+                </div> 
+                <div class="footer__card footer__classes flex flex-column flex-around">
+                    <ul class="flex flex-column" role="list">
+                        <li class="footer__classes__caption fs-200 capitalize color-theme-medium-red"> our classes </li>
+                        <li class="footer__classes__description fs-100 capitalize">fitness classes</li>
+                        <li class="footer__classes__description fs-100 capitalize">aerobics classes</li>
+                        <li class="footer__classes__description fs-100 capitalize">power yoga</li>
+                        <li class="footer__classes__description fs-100 capitalize">lean machines</li>
+                        <li class="footer__classes__description fs-100 capitalize">full - body strength</li> 
+                    </ul>
+                </div>
+                <div class="footer__card footer__classes__other flex flex-column flex-around">
+                    <ul class="flex flex-column" role="list">
+                        <li class="footer__classes__other__description
+                        capitalize fs-200 capitalize color-theme-medium-red">other</li>
+                       <li class="footer__classes__other__description fs-100 capitalize">sponsor us !</li>
+                       <li class="footer__classes__other__description fs-100 capitalize">open startup</li>
+                       <li class="footer__classes__other__description fs-100 capitalize">contribute</li>
+                       <li class="footer__classes__other__description fs-100 uppercase">faq</li>
+                    </ul>
+                </div>
+                <div class="footer__card footer__classes__company-location flex flex-column flex-between">
+                    <ul class="flex flex-column" role="list">
+                        <p class="fs-200 capitalize color-theme-medium-red">50 evenue street, LA</p>
+                        <p class="fs-200 capitalize">email us</p>
+                        <li class="footer__classes__email fs-150">fitgim@email.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__card footer__copyright fs-100 capitalize bg-theme-dark-black mb-2 pb-1">2023 fit gim. All rights reserved by giovanni serra</div>
+    </footer>
+</body>
+</html>
