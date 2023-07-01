@@ -423,6 +423,19 @@
 
 }
 
+/*         300px      */
+
+
+@media (max-width: 18.75em) {
+    .logo { align-items: center }
+    .logo img { height: 100% }
+    .logo-caption a { display: none }
+
+    .main-links { padding-block: 1em }
+}
+
+/* Landscape Orientation */
+
 @media ( (max-width: 100px) and (orientation: landscape) ) {
     .main-links { margin-block-start: 80px }
 }
