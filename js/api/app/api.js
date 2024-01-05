@@ -12,12 +12,12 @@ export const exerciseDB = {
 	}
 };
 
-export const searchYoutubeVideos = {
+const options = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': `${apiKeyExercises}`,
-		'X-RapidAPI-Host': 'youtube-search-results.p.rapidapi.com'
-	} 
+		'X-RapidAPI-Host': 'youtube-search-and-download.p.rapidapi.com'
+	}
 };
 
 export const fetchData = function(url, callBack, optionalParameters) {
