@@ -8,7 +8,7 @@ let firstWord;
 let secondWord;
 
 function createCard(parentCard, { items }) {
-
+  console.log("ITEMS: ", items)
 items.forEach(video => { 
     let {
     type,
