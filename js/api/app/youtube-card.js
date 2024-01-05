@@ -63,4 +63,7 @@ if (bodyPart.indexOf(" ") != -1) {
 
 fetch(`https://youtube-search-results.p.rapidapi.com/youtube-search/?q=${bodyPart}`,searchYoutubeVideos)
 .then( response => response.json() )
-.then( data => createCard(containerVideos,data))
+.then( data => {
+  console.log(data)
+  createCard(containerVideos,data)
+})
