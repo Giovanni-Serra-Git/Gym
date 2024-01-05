@@ -1,7 +1,7 @@
-import {searchYoutubeVideos} from "./api.js"
+import { searchYoutubeVideos } from "./api.js"
 
 let containerVideos = document.querySelector("[exercises-related-youtube-videos-slider__wrapper]");
-console.log(containerVideos)
+console.log(searchYoutubeVideos)
 
 let bodyPart = window.localStorage.getItem("bodyPart");
 let firstWord;
