@@ -12,7 +12,7 @@ export const exerciseDB = {
 	}
 };
 
-const options = {
+export const searchYoutubeVideos = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': `${apiKeyExercises}`,
