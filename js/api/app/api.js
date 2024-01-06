@@ -1,5 +1,5 @@
-const apiKey = "3dbabcb1c2msh7cad4344bbc778fp173816jsn519c18796089";
-const apiKeyExercises = "3dbabcb1c2msh7cad4344bbc778fp173816jsn519c18796089";
+const apiKey = "2c582f9687mshaadbb1346497f23p1c1147jsn59140c4aec54";
+const apiKeyExercises = "2c582f9687mshaadbb1346497f23p1c1147jsn59140c4aec54";
 
 
 export const rapidApiUrl = `exercisedb.p.rapidapi.com`
