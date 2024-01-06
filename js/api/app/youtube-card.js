@@ -50,9 +50,10 @@ function createCard(parentCard, items ) {
         <img src="${posterImage}"  class="yt-image">
         <div class="channel-description flex flex-align-center flex-between">
         <p class="title-youtube" title-youtube title="${title}">${title}</p>
-            // <img src="${urlAvatar}">
         </div>
     `;
+                // <img src="${urlAvatar}">
+
     linkCard.appendChild(card);
     parentCard.appendChild(linkCard);
 
